@@ -1,28 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {Button} from 'antd';
-
-interface Iprops{
-  history:any
-}
-
-// class Login extends Component<Iprops,any> {
-//   render() {
-//     return (
-//       <div>
-//         <h1>我是登录页</h1>
-//         <Button type='primary'>跳转到主页</Button>
-//       </div>
-//     );
-//   }
-// }
-
-// export default Login;
+import { useNavigate } from 'react-router-dom';
 
 export default function Login() {
+  const navigate = useNavigate();
+  const toHome = () => {
+    navigate('/home');
+  }
   return (
     <div>
       <h1>我是登录页</h1>
-      <Button type='primary'>跳转到主页</Button>
+      <Button type='primary' onClick={toHome}>跳转到主页</Button>
     </div>
   );
 }
