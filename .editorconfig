@@ -1,0 +1,17 @@
+# # EditorConfig is awesome: https://EditorConfig.org
+# # 这是一个配置文件 配置编辑器的一些默认属性（一只鱼的小小理解）
+
+# # top-most EditorConfig file
+# root = true
+
+# [*]
+# indent_style = space
+indent_size = 2
+# end_of_line = crlf
+# charset = utf-8
+# trim_trailing_whitespace = false
+# insert_final_newline = false
+# # 加上这一行
+# # 让行尾换行符直接遵守操作系统的换行符
+# # end_of_line = unset
+# trim_trailing_whitespace = false

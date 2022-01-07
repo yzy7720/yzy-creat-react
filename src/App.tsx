@@ -7,14 +7,14 @@
  * @FilePath: \yzy-creat-react\src\App.tsx
  */
 import React from 'react';
-// import logo from './logo.svg';
-import './App.css';
+import { HashRouter } from "react-router-dom";
+import Main from './router/main'
 
 function App() {
   return (
-    <div className="App">
-      自己测试搭建react
-    </div>
+    <HashRouter>
+      <Main />
+    </HashRouter>
   );
 }
 
