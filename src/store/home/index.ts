@@ -1,15 +1,12 @@
 // import { Dispatch } from 'redux';
-type State = Readonly<{ homeList: []}>;
-type Action = { type: string; payload: any };
 
-const initState: State = { homeList: [] };
 
-const home = (initState: any, action: Action) => {
+const home = (state: 0, action: { type: any; }) => {
   switch (action.type) {
     case 'HOME_LIST':
-    return { ...initState, homeList: action.payload };
+    return state + 1;
     default:
-    return initState;
+    return state;
   }
 }
 export default home;
