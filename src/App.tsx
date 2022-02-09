@@ -12,9 +12,9 @@ import Main from './router/main'
 
 function App() {
   return (
-    <HashRouter>
-      <Main />
-    </HashRouter>
+      <HashRouter>
+        <Main />
+      </HashRouter>
   );
 }
 
